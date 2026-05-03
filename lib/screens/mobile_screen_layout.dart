@@ -53,7 +53,7 @@ class _MobileScreenLayoutState extends State<MobileScreenLayout> {
           const AddPostScreen(),
           const Center(child: Text('Notifications')),
           ProfileScreen(
-            uid: FirebaseAuth.instance.currentUser!.uid,
+            uid: 'test_uid', // TODO: Replace with FirebaseAuth.instance.currentUser!.uid when Firebase is configured
           ),
         ],
       ),
